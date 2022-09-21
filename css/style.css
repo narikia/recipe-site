@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    height: 150px;
+    background-color: #fff;
+}
+
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.button {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    width: 100px;
+}
+
+.button a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+body {
+    
+}
+
+.main {
+    background: linear-gradient(to bottom,#f6f5f5 0,#f6f5f5 72%,#fff 72%,#fff 100%);
+    padding: 20px;
+}
+
+.featured {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 2px 3px 10px rgb(0 0 0 / 9%);
+}
+
+article img {
+    height: 450px;
+    width: 250px;
+}
