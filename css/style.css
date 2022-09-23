@@ -57,8 +57,10 @@ article {
 @media only screen and (max-width: 600px) {
     #article1 {
         width: 50%;
+        flex-shrink: inherit;
     }
     #article2 {
         width: 50%;
+        flex-shrink: inherit;
     }
 }
