@@ -42,6 +42,7 @@ h1 {
 .featured {
     display: flex;
     background-color: #fff;
+    width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
     flex-wrap: wrap;
@@ -49,19 +50,17 @@ h1 {
 }
 
 article {
-    flex-basis: auto;
     padding: 1em;
     box-shadow: 2px 3px 10px rgb(0 0 0 / 9%);
     text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
-    #article {
-        width: 20%;
-        flex-direction: column;
+    article {
+        width: 35%;
     }
 
-    #article img {
-        width: 15%;
+    article img {
+        width: 60%;
     }
 }
