@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #fff;
 }
 
@@ -14,7 +14,7 @@ header {
     font-family: 'Great Vibes', cursive;
     font-size: 30px;
     color: black;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 #hamburger {
@@ -34,11 +34,6 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-.main {
-    background: linear-gradient(to bottom,#f6f5f5 0,#f6f5f5 72%,#fff 72%,#fff 100%);
-    padding: 1em;
-}
-
 .featured {
     display: flex;
     background-color: #fff;
@@ -50,17 +45,19 @@ h1 {
 }
 
 article {
-    padding: 1em;
     box-shadow: 2px 3px 10px rgb(0 0 0 / 9%);
     text-align: center;
+    margin: 1em;
 }
 
 @media only screen and (max-width: 600px) {
     article {
-        width: 35%;
+        width: 45%;
+        margin: 0.5em;
     }
 
     article img {
-        width: 60%;
+        width: 99%;
     }
+
 }
