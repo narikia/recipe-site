@@ -45,6 +45,7 @@ h1 {
     padding-top: 1em;
     padding-bottom: 1em;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 article {
@@ -55,12 +56,12 @@ article {
 }
 
 @media only screen and (max-width: 600px) {
-    #article1 {
-        width: 50%;
-        flex-shrink: inherit;
+    #article {
+        width: 20%;
+        flex-direction: column;
     }
-    #article2 {
-        width: 50%;
-        flex-shrink: inherit;
+
+    #article img {
+        width: 15%;
     }
 }
