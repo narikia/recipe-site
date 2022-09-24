@@ -35,23 +35,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-}
-
-h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h4 {
-    font-family: 'Playfair Display', serif;
-}
-
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  }
 
 .featured {
     display: flex;
@@ -69,19 +55,15 @@ article {
     margin: 1em;
 }
 
-.post-section {
-    margin-left: 5em;
-    margin-right: 5em;
-    padding-bottom: 1em;
-}
-
-.labels {
+.label {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
     align-items: center;
+    margin-bottom: 0;
 }
 
-.latest-posts-label {
+.latest {
     background-color: #f6a6b9;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
@@ -111,30 +93,58 @@ strong {
     padding-right: 2px;
 }
 
+/* more responsiveness required */
+
 .posts-container {
     display: flex;
+    width: 100%;
     border-style: solid;
     border-color: #f6a6b9;
     border-width: 0.3em;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 .blog {
     display: flex;
     flex-wrap: wrap;
-    width: 23%;
+    width: 25%;
 }
 
 .blog img {
-    height: 300px;
+    width: 99%;
 }
 
-#newsletter {
+
+#newsletter-container {
     background-color: #fdedf0;
-    text-align: center;
 }
 
+
+.subscribe {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.subscribe-title {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;
+}
+
+.subscribe-excerpt {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sign-up-form {
+    max-width: 700px;
+}
 
 input[type=submit] {
     background-color: #f7b8c3;
@@ -157,10 +167,16 @@ input {
 }
 
 footer {
+    display: flex;
     background-color: #f6a6b9;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.credits {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -177,18 +193,11 @@ footer {
         font-size: 16px;
     }
 
-    h2 {
-        font-size: 12px;
+  h2 {
+    font-size: 12px;
     }
-
-    .post-section {
-        margin-right: 0.5em;
-        margin-left: 0.5em;
+  
+  .blog {
+    width: 45%;
     }
-
-    .blog {
-        width: 45%;
-        margin: 0.5em;
-    }
-
 }
